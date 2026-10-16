@@ -86,10 +86,10 @@ tests/                    smoke tests
 
 ## Team
 
-| Member | Phase 1 responsibility |
-|---|---|
-| Member 1 (group head) | literature review, base paper analysis, proposal |
-| Member 2 | data pipeline, tools, evaluation harness |
-| Member 3 | LLM providers, baselines, agent loop |
+| Member | Roll No. | Responsibility |
+|---|---|---|
+| Ibrahim Umar Malik (group head) | 22I-2315 | literature review, base paper (OpenRCA) re-run, verifier (Gap 1), paper |
+| Syed Mustafa Ali | 22I-2304 | data loaders, tool layer, evaluation harness, budget controller (Gap 2) |
+| Fasih Shahid Abbasi | 22I-2235 | LLM providers, agent loop, incident memory (Gap 3), CLI |
 
 Every member should commit their own part (see the commit history requirement in the Phase 1 brief).
