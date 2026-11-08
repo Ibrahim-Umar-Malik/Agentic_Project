@@ -1,0 +1,10 @@
+{
+  "method": "E4_P0_plus_Gap3_Memory_scripted",
+  "llm": "scripted",
+  "seed": 44,
+  "max_steps": 8,
+  "max_tool_calls": 20,
+  "verifier": false,
+  "budget": false,
+  "memory": true
+}

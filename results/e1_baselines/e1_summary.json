@@ -1,0 +1,148 @@
+{
+  "experiment": "E1_baselines",
+  "split": "test",
+  "provider": "scripted",
+  "is_offline_scripted": true,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "methods": {
+    "B0-stat-metric": {
+      "mean": {
+        "cases": 71,
+        "AC@1": 0.155,
+        "AC@3": 0.296,
+        "AC@5": 0.366,
+        "Avg@5": 0.279,
+        "fault_type_acc|top1_hit": 0.182,
+        "avg_llm_calls": 0.0,
+        "avg_tool_calls": 0.0,
+        "avg_tokens": 0.0,
+        "avg_latency_s": 0.019,
+        "avg_retries": 0.0,
+        "avg_cost_usd": 0.0,
+        "early_stop_rate": 0.0
+      },
+      "std": {
+        "AC@1": 0.0,
+        "AC@3": 0.0,
+        "AC@5": 0.0,
+        "Avg@5": 0.0,
+        "fault_type_acc|top1_hit": 0.0,
+        "avg_llm_calls": 0.0,
+        "avg_tool_calls": 0.0,
+        "avg_tokens": 0.0,
+        "avg_latency_s": 0.0,
+        "avg_retries": 0.0,
+        "avg_cost_usd": 0.0,
+        "early_stop_rate": 0.0
+      },
+      "formatted": {
+        "AC@1": "0.155 \u00b1 0.000",
+        "AC@3": "0.296 \u00b1 0.000",
+        "AC@5": "0.366 \u00b1 0.000",
+        "Avg@5": "0.279 \u00b1 0.000",
+        "fault_type_acc|top1_hit": "0.182 \u00b1 0.000",
+        "avg_llm_calls": "0.000 \u00b1 0.000",
+        "avg_tool_calls": "0.000 \u00b1 0.000",
+        "avg_tokens": "0.0 \u00b1 0.0",
+        "avg_latency_s": "0.019 \u00b1 0.000",
+        "avg_retries": "0.000 \u00b1 0.000",
+        "avg_cost_usd": "0.000000 \u00b1 0.000000",
+        "early_stop_rate": "0.000 \u00b1 0.000"
+      }
+    },
+    "B0-stat-multimodal": {
+      "mean": {
+        "cases": 71,
+        "AC@1": 0.282,
+        "AC@3": 0.38,
+        "AC@5": 0.451,
+        "Avg@5": 0.366,
+        "fault_type_acc|top1_hit": 0.65,
+        "avg_llm_calls": 0.0,
+        "avg_tool_calls": 0.0,
+        "avg_tokens": 0.0,
+        "avg_latency_s": 0.007,
+        "avg_retries": 0.0,
+        "avg_cost_usd": 0.0,
+        "early_stop_rate": 0.0
+      },
+      "std": {
+        "AC@1": 0.0,
+        "AC@3": 0.0,
+        "AC@5": 0.0,
+        "Avg@5": 0.0,
+        "fault_type_acc|top1_hit": 0.0,
+        "avg_llm_calls": 0.0,
+        "avg_tool_calls": 0.0,
+        "avg_tokens": 0.0,
+        "avg_latency_s": 0.0,
+        "avg_retries": 0.0,
+        "avg_cost_usd": 0.0,
+        "early_stop_rate": 0.0
+      },
+      "formatted": {
+        "AC@1": "0.282 \u00b1 0.000",
+        "AC@3": "0.380 \u00b1 0.000",
+        "AC@5": "0.451 \u00b1 0.000",
+        "Avg@5": "0.366 \u00b1 0.000",
+        "fault_type_acc|top1_hit": "0.650 \u00b1 0.000",
+        "avg_llm_calls": "0.000 \u00b1 0.000",
+        "avg_tool_calls": "0.000 \u00b1 0.000",
+        "avg_tokens": "0.0 \u00b1 0.0",
+        "avg_latency_s": "0.007 \u00b1 0.000",
+        "avg_retries": "0.000 \u00b1 0.000",
+        "avg_cost_usd": "0.000000 \u00b1 0.000000",
+        "early_stop_rate": "0.000 \u00b1 0.000"
+      }
+    },
+    "B1-single-call:scripted": {
+      "mean": {
+        "cases": 71,
+        "AC@1": 0.155,
+        "AC@3": 0.296,
+        "AC@5": 0.366,
+        "Avg@5": 0.282,
+        "fault_type_acc|top1_hit": 0.182,
+        "avg_llm_calls": 1.0,
+        "avg_tool_calls": 0.0,
+        "avg_tokens": 1695.6,
+        "avg_latency_s": 0.0,
+        "avg_retries": 0.0,
+        "avg_cost_usd": 0.000333,
+        "early_stop_rate": 0.0
+      },
+      "std": {
+        "AC@1": 0.0,
+        "AC@3": 0.011,
+        "AC@5": 0.0,
+        "Avg@5": 0.004,
+        "fault_type_acc|top1_hit": 0.0,
+        "avg_llm_calls": 0.0,
+        "avg_tool_calls": 0.0,
+        "avg_tokens": 0.0,
+        "avg_latency_s": 0.0,
+        "avg_retries": 0.0,
+        "avg_cost_usd": 0.0,
+        "early_stop_rate": 0.0
+      },
+      "formatted": {
+        "AC@1": "0.155 \u00b1 0.000",
+        "AC@3": "0.296 \u00b1 0.011",
+        "AC@5": "0.366 \u00b1 0.000",
+        "Avg@5": "0.282 \u00b1 0.004",
+        "fault_type_acc|top1_hit": "0.182 \u00b1 0.000",
+        "avg_llm_calls": "1.000 \u00b1 0.000",
+        "avg_tool_calls": "0.000 \u00b1 0.000",
+        "avg_tokens": "1695.6 \u00b1 0.0",
+        "avg_latency_s": "0.000 \u00b1 0.000",
+        "avg_retries": "0.000 \u00b1 0.000",
+        "avg_cost_usd": "0.000333 \u00b1 0.000000",
+        "early_stop_rate": "0.000 \u00b1 0.000"
+      }
+    }
+  }
+}

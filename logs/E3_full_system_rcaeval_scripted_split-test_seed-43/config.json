@@ -1,0 +1,10 @@
+{
+  "method": "E3_full_system_rcaeval_scripted",
+  "llm": "scripted",
+  "seed": 43,
+  "max_steps": 6,
+  "max_tool_calls": 10,
+  "verifier": true,
+  "budget": true,
+  "memory": true
+}

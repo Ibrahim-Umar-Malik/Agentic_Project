@@ -1,0 +1,10 @@
+{
+  "method": "E4_P0_plus_Gap1_Verifier_scripted",
+  "llm": "scripted",
+  "seed": 43,
+  "max_steps": 8,
+  "max_tool_calls": 20,
+  "verifier": true,
+  "budget": false,
+  "memory": false
+}

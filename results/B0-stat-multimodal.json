@@ -1,0 +1,103 @@
+{
+  "method": "B0-stat-multimodal",
+  "overall": {
+    "cases": 101,
+    "AC@1": 0.307,
+    "AC@3": 0.396,
+    "AC@5": 0.475,
+    "Avg@5": 0.386,
+    "fault_type_acc|top1_hit": 0.645,
+    "avg_llm_calls": 0.0,
+    "avg_tool_calls": 0.0,
+    "avg_tokens": 0.0,
+    "avg_latency_s": 0.009
+  },
+  "by_system": {
+    "online-boutique": {
+      "cases": 56,
+      "AC@1": 0.429,
+      "AC@3": 0.589,
+      "AC@5": 0.732,
+      "Avg@5": 0.571,
+      "fault_type_acc|top1_hit": 0.542,
+      "avg_llm_calls": 0.0,
+      "avg_tool_calls": 0.0,
+      "avg_tokens": 0.0,
+      "avg_latency_s": 0.004
+    },
+    "train-ticket": {
+      "cases": 45,
+      "AC@1": 0.156,
+      "AC@3": 0.156,
+      "AC@5": 0.156,
+      "Avg@5": 0.156,
+      "fault_type_acc|top1_hit": 1.0,
+      "avg_llm_calls": 0.0,
+      "avg_tool_calls": 0.0,
+      "avg_tokens": 0.0,
+      "avg_latency_s": 0.016
+    }
+  },
+  "by_fault": {
+    "cpu_consumed": {
+      "cases": 10,
+      "AC@1": 0.5,
+      "AC@3": 0.8,
+      "AC@5": 1.0,
+      "Avg@5": 0.76,
+      "fault_type_acc|top1_hit": 0.0,
+      "avg_llm_calls": 0.0,
+      "avg_tool_calls": 0.0,
+      "avg_tokens": 0.0,
+      "avg_latency_s": 0.004
+    },
+    "cpu_contention": {
+      "cases": 23,
+      "AC@1": 0.913,
+      "AC@3": 1.0,
+      "AC@5": 1.0,
+      "Avg@5": 0.974,
+      "fault_type_acc|top1_hit": 0.952,
+      "avg_llm_calls": 0.0,
+      "avg_tool_calls": 0.0,
+      "avg_tokens": 0.0,
+      "avg_latency_s": 0.008
+    },
+    "exception": {
+      "cases": 20,
+      "AC@1": 0.1,
+      "AC@3": 0.15,
+      "AC@5": 0.2,
+      "Avg@5": 0.15,
+      "fault_type_acc|top1_hit": 0.0,
+      "avg_llm_calls": 0.0,
+      "avg_tool_calls": 0.0,
+      "avg_tokens": 0.0,
+      "avg_latency_s": 0.012
+    },
+    "network_delay": {
+      "cases": 30,
+      "AC@1": 0.033,
+      "AC@3": 0.1,
+      "AC@5": 0.267,
+      "Avg@5": 0.113,
+      "fault_type_acc|top1_hit": 0.0,
+      "avg_llm_calls": 0.0,
+      "avg_tool_calls": 0.0,
+      "avg_tokens": 0.0,
+      "avg_latency_s": 0.01
+    },
+    "return": {
+      "cases": 18,
+      "AC@1": 0.111,
+      "AC@3": 0.167,
+      "AC@5": 0.167,
+      "Avg@5": 0.144,
+      "fault_type_acc|top1_hit": 0.0,
+      "avg_llm_calls": 0.0,
+      "avg_tool_calls": 0.0,
+      "avg_tokens": 0.0,
+      "avg_latency_s": 0.011
+    }
+  }
+}

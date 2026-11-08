@@ -1,0 +1,10 @@
+{
+  "method": "E5_Full_minus_Memory_scripted",
+  "llm": "scripted",
+  "seed": 42,
+  "max_steps": 6,
+  "max_tool_calls": 10,
+  "verifier": true,
+  "budget": true,
+  "memory": false
+}

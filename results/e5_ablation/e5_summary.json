@@ -1,0 +1,193 @@
+{
+  "experiment": "E5_ablation",
+  "split": "test",
+  "provider": "scripted",
+  "is_offline_scripted": true,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "ablations": {
+    "Full_all_gaps": {
+      "mean": {
+        "cases": 71,
+        "AC@1": 0.413,
+        "AC@3": 0.577,
+        "AC@5": 0.648,
+        "Avg@5": 0.556,
+        "fault_type_acc|top1_hit": 0.614,
+        "avg_llm_calls": 3.0,
+        "avg_tool_calls": 6.0,
+        "avg_tokens": 3773.6,
+        "avg_latency_s": 0.023,
+        "avg_retries": 0.0,
+        "avg_cost_usd": 0.000688,
+        "early_stop_rate": 1.0
+      },
+      "std": {
+        "AC@1": 0.007,
+        "AC@3": 0.0,
+        "AC@5": 0.0,
+        "Avg@5": 0.001,
+        "fault_type_acc|top1_hit": 0.01,
+        "avg_llm_calls": 0.0,
+        "avg_tool_calls": 0.0,
+        "avg_tokens": 0.0,
+        "avg_latency_s": 0.001,
+        "avg_retries": 0.0,
+        "avg_cost_usd": 0.0,
+        "early_stop_rate": 0.0
+      },
+      "formatted": {
+        "AC@1": "0.413 \u00b1 0.007",
+        "AC@3": "0.577 \u00b1 0.000",
+        "AC@5": "0.648 \u00b1 0.000",
+        "Avg@5": "0.556 \u00b1 0.001",
+        "fault_type_acc|top1_hit": "0.614 \u00b1 0.010",
+        "avg_llm_calls": "3.000 \u00b1 0.000",
+        "avg_tool_calls": "6.000 \u00b1 0.000",
+        "avg_tokens": "3773.6 \u00b1 0.0",
+        "avg_latency_s": "0.023 \u00b1 0.001",
+        "avg_retries": "0.000 \u00b1 0.000",
+        "avg_cost_usd": "0.000688 \u00b1 0.000000",
+        "early_stop_rate": "1.000 \u00b1 0.000"
+      }
+    },
+    "Full_minus_Verifier": {
+      "mean": {
+        "cases": 71,
+        "AC@1": 0.155,
+        "AC@3": 0.291,
+        "AC@5": 0.324,
+        "Avg@5": 0.269,
+        "fault_type_acc|top1_hit": 0.182,
+        "avg_llm_calls": 3.0,
+        "avg_tool_calls": 6.0,
+        "avg_tokens": 3773.6,
+        "avg_latency_s": 0.021,
+        "avg_retries": 0.0,
+        "avg_cost_usd": 0.000688,
+        "early_stop_rate": 1.0
+      },
+      "std": {
+        "AC@1": 0.0,
+        "AC@3": 0.007,
+        "AC@5": 0.0,
+        "Avg@5": 0.001,
+        "fault_type_acc|top1_hit": 0.0,
+        "avg_llm_calls": 0.0,
+        "avg_tool_calls": 0.0,
+        "avg_tokens": 0.0,
+        "avg_latency_s": 0.0,
+        "avg_retries": 0.0,
+        "avg_cost_usd": 0.0,
+        "early_stop_rate": 0.0
+      },
+      "formatted": {
+        "AC@1": "0.155 \u00b1 0.000",
+        "AC@3": "0.291 \u00b1 0.007",
+        "AC@5": "0.324 \u00b1 0.000",
+        "Avg@5": "0.269 \u00b1 0.001",
+        "fault_type_acc|top1_hit": "0.182 \u00b1 0.000",
+        "avg_llm_calls": "3.000 \u00b1 0.000",
+        "avg_tool_calls": "6.000 \u00b1 0.000",
+        "avg_tokens": "3773.6 \u00b1 0.0",
+        "avg_latency_s": "0.021 \u00b1 0.000",
+        "avg_retries": "0.000 \u00b1 0.000",
+        "avg_cost_usd": "0.000688 \u00b1 0.000000",
+        "early_stop_rate": "1.000 \u00b1 0.000"
+      }
+    },
+    "Full_minus_Budget": {
+      "mean": {
+        "cases": 71,
+        "AC@1": 0.423,
+        "AC@3": 0.577,
+        "AC@5": 0.648,
+        "Avg@5": 0.555,
+        "fault_type_acc|top1_hit": 0.6,
+        "avg_llm_calls": 3.99,
+        "avg_tool_calls": 9.61,
+        "avg_tokens": 5872.2,
+        "avg_latency_s": 0.021,
+        "avg_retries": 0.0,
+        "avg_cost_usd": 0.001031,
+        "early_stop_rate": 0.0
+      },
+      "std": {
+        "AC@1": 0.0,
+        "AC@3": 0.0,
+        "AC@5": 0.0,
+        "Avg@5": 0.0,
+        "fault_type_acc|top1_hit": 0.0,
+        "avg_llm_calls": 0.0,
+        "avg_tool_calls": 0.0,
+        "avg_tokens": 0.0,
+        "avg_latency_s": 0.002,
+        "avg_retries": 0.0,
+        "avg_cost_usd": 0.0,
+        "early_stop_rate": 0.0
+      },
+      "formatted": {
+        "AC@1": "0.423 \u00b1 0.000",
+        "AC@3": "0.577 \u00b1 0.000",
+        "AC@5": "0.648 \u00b1 0.000",
+        "Avg@5": "0.555 \u00b1 0.000",
+        "fault_type_acc|top1_hit": "0.600 \u00b1 0.000",
+        "avg_llm_calls": "3.990 \u00b1 0.000",
+        "avg_tool_calls": "9.610 \u00b1 0.000",
+        "avg_tokens": "5872.2 \u00b1 0.0",
+        "avg_latency_s": "0.021 \u00b1 0.002",
+        "avg_retries": "0.000 \u00b1 0.000",
+        "avg_cost_usd": "0.001031 \u00b1 0.000000",
+        "early_stop_rate": "0.000 \u00b1 0.000"
+      }
+    },
+    "Full_minus_Memory": {
+      "mean": {
+        "cases": 71,
+        "AC@1": 0.413,
+        "AC@3": 0.577,
+        "AC@5": 0.648,
+        "Avg@5": 0.553,
+        "fault_type_acc|top1_hit": 0.614,
+        "avg_llm_calls": 3.0,
+        "avg_tool_calls": 6.0,
+        "avg_tokens": 2986.3,
+        "avg_latency_s": 0.02,
+        "avg_retries": 0.0,
+        "avg_cost_usd": 0.00057,
+        "early_stop_rate": 1.0
+      },
+      "std": {
+        "AC@1": 0.007,
+        "AC@3": 0.0,
+        "AC@5": 0.0,
+        "Avg@5": 0.001,
+        "fault_type_acc|top1_hit": 0.01,
+        "avg_llm_calls": 0.0,
+        "avg_tool_calls": 0.0,
+        "avg_tokens": 0.0,
+        "avg_latency_s": 0.0,
+        "avg_retries": 0.0,
+        "avg_cost_usd": 0.0,
+        "early_stop_rate": 0.0
+      },
+      "formatted": {
+        "AC@1": "0.413 \u00b1 0.007",
+        "AC@3": "0.577 \u00b1 0.000",
+        "AC@5": "0.648 \u00b1 0.000",
+        "Avg@5": "0.553 \u00b1 0.001",
+        "fault_type_acc|top1_hit": "0.614 \u00b1 0.010",
+        "avg_llm_calls": "3.000 \u00b1 0.000",
+        "avg_tool_calls": "6.000 \u00b1 0.000",
+        "avg_tokens": "2986.3 \u00b1 0.0",
+        "avg_latency_s": "0.020 \u00b1 0.000",
+        "avg_retries": "0.000 \u00b1 0.000",
+        "avg_cost_usd": "0.000570 \u00b1 0.000000",
+        "early_stop_rate": "1.000 \u00b1 0.000"
+      }
+    }
+  }
+}

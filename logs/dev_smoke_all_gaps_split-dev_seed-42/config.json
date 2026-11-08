@@ -1,0 +1,10 @@
+{
+  "method": "dev_smoke_all_gaps",
+  "llm": "scripted",
+  "seed": 42,
+  "max_steps": 6,
+  "max_tool_calls": 10,
+  "verifier": true,
+  "budget": true,
+  "memory": true
+}

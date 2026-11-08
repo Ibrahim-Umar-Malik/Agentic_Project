@@ -1,0 +1,559 @@
+{
+  "total_test_cases": 71,
+  "top1_hits": 29,
+  "top1_misses": 42,
+  "categories": {
+    "background_metric_noise_masking": 5,
+    "subtle_network_delay_propagation": 9,
+    "caller_callee_cascade_ambiguity": 19,
+    "silent_code_fault_no_error_logs": 9
+  },
+  "failures": [
+    {
+      "case_id": "2022-08-22_04_01",
+      "system": "online-boutique",
+      "true_service": "frontend",
+      "true_fault": "cpu_consumed",
+      "predicted_top3": [
+        "recommendationservice",
+        "productcatalogservice",
+        "currencyservice"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "background_metric_noise_masking"
+    },
+    {
+      "case_id": "2022-08-22_04_06",
+      "system": "online-boutique",
+      "true_service": "checkoutservice",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "productcatalogservice",
+        "recommendationservice",
+        "shippingservice"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "subtle_network_delay_propagation"
+    },
+    {
+      "case_id": "2022-08-22_05_00",
+      "system": "online-boutique",
+      "true_service": "checkoutservice",
+      "true_fault": "exception",
+      "predicted_top3": [
+        "frontend",
+        "paymentservice",
+        "recommendationservice"
+      ],
+      "predicted_fault": "exception",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2022-08-22_05_02",
+      "system": "online-boutique",
+      "true_service": "currencyservice",
+      "true_fault": "cpu_contention",
+      "predicted_top3": [
+        "frontend",
+        "productcatalogservice",
+        "currencyservice"
+      ],
+      "predicted_fault": "cpu_consumed",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2022-08-22_05_03",
+      "system": "online-boutique",
+      "true_service": "currencyservice",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "frontend",
+        "productcatalogservice",
+        "emailservice"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2022-08-22_05_05",
+      "system": "online-boutique",
+      "true_service": "emailservice",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "recommendationservice",
+        "emailservice",
+        "shippingservice"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2022-08-22_05_06",
+      "system": "online-boutique",
+      "true_service": "paymentservice",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "recommendationservice",
+        "paymentservice",
+        "productcatalogservice"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2022-08-22_06_02",
+      "system": "online-boutique",
+      "true_service": "recommendationservice",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "productcatalogservice",
+        "checkoutservice",
+        "currencyservice"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "background_metric_noise_masking"
+    },
+    {
+      "case_id": "2022-08-22_07_02",
+      "system": "online-boutique",
+      "true_service": "shippingservice",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "productcatalogservice",
+        "cartservice",
+        "checkoutservice"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "subtle_network_delay_propagation"
+    },
+    {
+      "case_id": "2022-08-22_07_04",
+      "system": "online-boutique",
+      "true_service": "adservice",
+      "true_fault": "return",
+      "predicted_top3": [
+        "productcatalogservice",
+        "recommendationservice",
+        "paymentservice"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "silent_code_fault_no_error_logs"
+    },
+    {
+      "case_id": "2022-08-22_07_05",
+      "system": "online-boutique",
+      "true_service": "adservice",
+      "true_fault": "exception",
+      "predicted_top3": [
+        "productcatalogservice",
+        "adservice",
+        "frontend"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2022-08-23_13_00",
+      "system": "online-boutique",
+      "true_service": "checkoutservice",
+      "true_fault": "exception",
+      "predicted_top3": [
+        "paymentservice",
+        "frontend",
+        "checkoutservice"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2022-08-23_13_01",
+      "system": "online-boutique",
+      "true_service": "checkoutservice",
+      "true_fault": "return",
+      "predicted_top3": [
+        "frontend",
+        "checkoutservice",
+        "emailservice"
+      ],
+      "predicted_fault": "exception",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2022-08-23_13_03",
+      "system": "online-boutique",
+      "true_service": "currencyservice",
+      "true_fault": "cpu_contention",
+      "predicted_top3": [
+        "productcatalogservice",
+        "currencyservice",
+        "adservice"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2022-08-23_13_04",
+      "system": "online-boutique",
+      "true_service": "currencyservice",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "checkoutservice",
+        "productcatalogservice",
+        "frontend"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2022-08-23_13_06",
+      "system": "online-boutique",
+      "true_service": "emailservice",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "productcatalogservice",
+        "checkoutservice",
+        "currencyservice"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2022-08-23_14_04",
+      "system": "online-boutique",
+      "true_service": "productcatalogservice",
+      "true_fault": "return",
+      "predicted_top3": [
+        "shippingservice",
+        "frontend",
+        "paymentservice"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2022-08-23_14_05",
+      "system": "online-boutique",
+      "true_service": "productcatalogservice",
+      "true_fault": "cpu_consumed",
+      "predicted_top3": [
+        "checkoutservice",
+        "recommendationservice",
+        "currencyservice"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2022-08-23_15_01",
+      "system": "online-boutique",
+      "true_service": "recommendationservice",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "paymentservice",
+        "currencyservice",
+        "emailservice"
+      ],
+      "predicted_fault": "cpu_consumed",
+      "category": "subtle_network_delay_propagation"
+    },
+    {
+      "case_id": "2022-08-23_16_00",
+      "system": "online-boutique",
+      "true_service": "adservice",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "frontend",
+        "recommendationservice",
+        "adservice"
+      ],
+      "predicted_fault": "exception",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2023-01-29_08_02",
+      "system": "train-ticket",
+      "true_service": "ts-contacts-service",
+      "true_fault": "return",
+      "predicted_top3": [
+        "ts-order-service",
+        "ts-contacts-service",
+        "ts-route-service"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2023-01-29_09_04",
+      "system": "train-ticket",
+      "true_service": "ts-food-service",
+      "true_fault": "return",
+      "predicted_top3": [
+        "ts-verification-code-service",
+        "ts-travel-service",
+        "ts-order-other-service"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "silent_code_fault_no_error_logs"
+    },
+    {
+      "case_id": "2023-01-29_09_05",
+      "system": "train-ticket",
+      "true_service": "ts-food-service",
+      "true_fault": "return",
+      "predicted_top3": [
+        "ts-basic-service",
+        "ts-travel-service",
+        "ts-order-other-service"
+      ],
+      "predicted_fault": "exception",
+      "category": "silent_code_fault_no_error_logs"
+    },
+    {
+      "case_id": "2023-01-29_09_06",
+      "system": "train-ticket",
+      "true_service": "ts-verification-code-service",
+      "true_fault": "return",
+      "predicted_top3": [
+        "ts-order-service",
+        "ts-verification-code-service",
+        "ts-user-service"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2023-01-29_10_02",
+      "system": "train-ticket",
+      "true_service": "ts-travel-service",
+      "true_fault": "exception",
+      "predicted_top3": [
+        "ts-order-service",
+        "ts-travel-service",
+        "ts-security-service"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2023-01-29_10_03",
+      "system": "train-ticket",
+      "true_service": "ts-travel2-service",
+      "true_fault": "exception",
+      "predicted_top3": [
+        "ts-order-service",
+        "ts-basic-service",
+        "ts-preserve-other-service"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "silent_code_fault_no_error_logs"
+    },
+    {
+      "case_id": "2023-01-29_10_05",
+      "system": "train-ticket",
+      "true_service": "ts-travel2-service",
+      "true_fault": "exception",
+      "predicted_top3": [
+        "ts-order-service",
+        "ts-preserve-other-service",
+        "ts-order-other-service"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "silent_code_fault_no_error_logs"
+    },
+    {
+      "case_id": "2023-01-29_10_06",
+      "system": "train-ticket",
+      "true_service": "ts-route-service",
+      "true_fault": "exception",
+      "predicted_top3": [
+        "ts-travel-service",
+        "ts-preserve-other-service",
+        "ts-user-service"
+      ],
+      "predicted_fault": "exception",
+      "category": "silent_code_fault_no_error_logs"
+    },
+    {
+      "case_id": "2023-01-29_11_02",
+      "system": "train-ticket",
+      "true_service": "ts-price-service",
+      "true_fault": "exception",
+      "predicted_top3": [
+        "ts-preserve-other-service",
+        "ts-seat-service",
+        "ts-order-other-service"
+      ],
+      "predicted_fault": "exception",
+      "category": "silent_code_fault_no_error_logs"
+    },
+    {
+      "case_id": "2023-01-29_11_03",
+      "system": "train-ticket",
+      "true_service": "ts-price-service",
+      "true_fault": "exception",
+      "predicted_top3": [
+        "ts-travel-service",
+        "ts-order-service",
+        "ts-route-service"
+      ],
+      "predicted_fault": "exception",
+      "category": "silent_code_fault_no_error_logs"
+    },
+    {
+      "case_id": "2023-01-29_11_04",
+      "system": "train-ticket",
+      "true_service": "ts-price-service",
+      "true_fault": "exception",
+      "predicted_top3": [
+        "ts-travel-service",
+        "ts-order-service",
+        "ts-auth-service"
+      ],
+      "predicted_fault": "exception",
+      "category": "silent_code_fault_no_error_logs"
+    },
+    {
+      "case_id": "2023-01-30_11_00",
+      "system": "train-ticket",
+      "true_service": "ts-contacts-service",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "ts-order-service",
+        "ts-execute-service",
+        "ts-preserve-service"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "subtle_network_delay_propagation"
+    },
+    {
+      "case_id": "2023-01-30_12_01",
+      "system": "train-ticket",
+      "true_service": "ts-basic-service",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "ts-order-service",
+        "ts-travel-service",
+        "ts-execute-service"
+      ],
+      "predicted_fault": "return",
+      "category": "subtle_network_delay_propagation"
+    },
+    {
+      "case_id": "2023-01-30_12_02",
+      "system": "train-ticket",
+      "true_service": "ts-verification-code-service",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "ts-execute-service",
+        "ts-seat-service",
+        "ts-auth-service"
+      ],
+      "predicted_fault": "exception",
+      "category": "subtle_network_delay_propagation"
+    },
+    {
+      "case_id": "2023-01-30_12_03",
+      "system": "train-ticket",
+      "true_service": "ts-verification-code-service",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "ts-inside-payment-service",
+        "ts-order-service",
+        "ts-order-other-service"
+      ],
+      "predicted_fault": "cpu_contention",
+      "category": "subtle_network_delay_propagation"
+    },
+    {
+      "case_id": "2023-01-30_12_05",
+      "system": "train-ticket",
+      "true_service": "ts-food-service",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "ts-order-service",
+        "ts-execute-service",
+        "ts-preserve-service"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "subtle_network_delay_propagation"
+    },
+    {
+      "case_id": "2023-01-30_12_06",
+      "system": "train-ticket",
+      "true_service": "ts-food-service",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "ts-order-service",
+        "ts-order-other-service",
+        "ts-basic-service"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "background_metric_noise_masking"
+    },
+    {
+      "case_id": "2023-01-30_13_00",
+      "system": "train-ticket",
+      "true_service": "ts-travel-service",
+      "true_fault": "cpu_contention",
+      "predicted_top3": [
+        "ts-order-service",
+        "ts-travel-service",
+        "ts-station-service"
+      ],
+      "predicted_fault": "return",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2023-01-30_13_03",
+      "system": "train-ticket",
+      "true_service": "ts-preserve-service",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "ts-order-service",
+        "ts-order-other-service",
+        "ts-seat-service"
+      ],
+      "predicted_fault": "cpu_consumed",
+      "category": "caller_callee_cascade_ambiguity"
+    },
+    {
+      "case_id": "2023-01-30_13_04",
+      "system": "train-ticket",
+      "true_service": "ts-route-service",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "ts-basic-service",
+        "ts-travel2-service",
+        "ts-train-food-service"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "subtle_network_delay_propagation"
+    },
+    {
+      "case_id": "2023-01-30_14_00",
+      "system": "train-ticket",
+      "true_service": "ts-security-service",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "ts-order-service",
+        "ts-seat-service",
+        "ts-preserve-other-service"
+      ],
+      "predicted_fault": "network_delay",
+      "category": "background_metric_noise_masking"
+    },
+    {
+      "case_id": "2023-01-30_14_01",
+      "system": "train-ticket",
+      "true_service": "ts-security-service",
+      "true_fault": "network_delay",
+      "predicted_top3": [
+        "ts-order-service",
+        "ts-notification-service",
+        "ts-station-service"
+      ],
+      "predicted_fault": "return",
+      "category": "background_metric_noise_masking"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "method": "dev_smoke_all_gaps",
+  "provider": "scripted",
+  "is_offline_scripted": true,
+  "split": "dev",
+  "seeds": [
+    42
+  ],
+  "gaps": {
+    "verifier": true,
+    "budget": true,
+    "memory": true
+  },
+  "overall": {
+    "cases": 30,
+    "AC@1": 0.567,
+    "AC@3": 0.6,
+    "AC@5": 0.733,
+    "Avg@5": 0.627,
+    "fault_type_acc|top1_hit": 0.765,
+    "avg_llm_calls": 3.0,
+    "avg_tool_calls": 6.0,
+    "avg_tokens": 3781.7,
+    "avg_latency_s": 0.016,
+    "avg_retries": 0.0,
+    "avg_cost_usd": 0.000693,
+    "early_stop_rate": 1.0
+  },
+  "multi_seed": {
+    "mean": {
+      "cases": 30,
+      "AC@1": 0.567,
+      "AC@3": 0.6,
+      "AC@5": 0.733,
+      "Avg@5": 0.627,
+      "fault_type_acc|top1_hit": 0.765,
+      "avg_llm_calls": 3.0,
+      "avg_tool_calls": 6.0,
+      "avg_tokens": 3781.7,
+      "avg_latency_s": 0.016,
+      "avg_retries": 0.0,
+      "avg_cost_usd": 0.000693,
+      "early_stop_rate": 1.0
+    },
+    "std": {
+      "AC@1": 0.0,
+      "AC@3": 0.0,
+      "AC@5": 0.0,
+      "Avg@5": 0.0,
+      "fault_type_acc|top1_hit": 0.0,
+      "avg_llm_calls": 0.0,
+      "avg_tool_calls": 0.0,
+      "avg_tokens": 0.0,
+      "avg_latency_s": 0.0,
+      "avg_retries": 0.0,
+      "avg_cost_usd": 0.0,
+      "early_stop_rate": 0.0
+    },
+    "formatted": {
+      "AC@1": "0.567 \u00b1 0.000",
+      "AC@3": "0.600 \u00b1 0.000",
+      "AC@5": "0.733 \u00b1 0.000",
+      "Avg@5": "0.627 \u00b1 0.000",
+      "fault_type_acc|top1_hit": "0.765 \u00b1 0.000",
+      "avg_llm_calls": "3.000 \u00b1 0.000",
+      "avg_tool_calls": "6.000 \u00b1 0.000",
+      "avg_tokens": "3781.7 \u00b1 0.0",
+      "avg_latency_s": "0.016 \u00b1 0.000",
+      "avg_retries": "0.000 \u00b1 0.000",
+      "avg_cost_usd": "0.000693 \u00b1 0.000000",
+      "early_stop_rate": "1.000 \u00b1 0.000"
+    }
+  },
+  "per_seed": {
+    "42": {
+      "cases": 30,
+      "AC@1": 0.567,
+      "AC@3": 0.6,
+      "AC@5": 0.733,
+      "Avg@5": 0.627,
+      "fault_type_acc|top1_hit": 0.765,
+      "avg_llm_calls": 3.0,
+      "avg_tool_calls": 6.0,
+      "avg_tokens": 3781.7,
+      "avg_latency_s": 0.016,
+      "avg_retries": 0.0,
+      "avg_cost_usd": 0.000693,
+      "early_stop_rate": 1.0
+    }
+  },
+  "by_system": {
+    "online-boutique": {
+      "cases": 17,
+      "AC@1": 0.647,
+      "AC@3": 0.706,
+      "AC@5": 0.824,
+      "Avg@5": 0.718,
+      "fault_type_acc|top1_hit": 0.818,
+      "avg_llm_calls": 3.0,
+      "avg_tool_calls": 6.0,
+      "avg_tokens": 3112.9,
+      "avg_latency_s": 0.006,
+      "avg_retries": 0.0,
+      "avg_cost_usd": 0.000587,
+      "early_stop_rate": 1.0
+    },
+    "train-ticket": {
+      "cases": 13,
+      "AC@1": 0.462,
+      "AC@3": 0.462,
+      "AC@5": 0.615,
+      "Avg@5": 0.508,
+      "fault_type_acc|top1_hit": 0.667,
+      "avg_llm_calls": 3.0,
+      "avg_tool_calls": 6.0,
+      "avg_tokens": 4656.4,
+      "avg_latency_s": 0.028,
+      "avg_retries": 0.0,
+      "avg_cost_usd": 0.000832,
+      "early_stop_rate": 1.0
+    }
+  },
+  "by_fault": {
+    "cpu_consumed": {
+      "cases": 3,
+      "AC@1": 0.667,
+      "AC@3": 1.0,
+      "AC@5": 1.0,
+      "Avg@5": 0.867,
+      "fault_type_acc|top1_hit": 1.0,
+      "avg_llm_calls": 3.0,
+      "avg_tool_calls": 6.0,
+      "avg_tokens": 3146.7,
+      "avg_latency_s": 0.006,
+      "avg_retries": 0.0,
+      "avg_cost_usd": 0.000596,
+      "early_stop_rate": 1.0
+    },
+    "cpu_contention": {
+      "cases": 7,
+      "AC@1": 1.0,
+      "AC@3": 1.0,
+      "AC@5": 1.0,
+      "Avg@5": 1.0,
+      "fault_type_acc|top1_hit": 0.857,
+      "avg_llm_calls": 3.0,
+      "avg_tool_calls": 6.0,
+      "avg_tokens": 3530.0,
+      "avg_latency_s": 0.012,
+      "avg_retries": 0.0,
+      "avg_cost_usd": 0.000648,
+      "early_stop_rate": 1.0
+    },
+    "exception": {
+      "cases": 6,
+      "AC@1": 0.5,
+      "AC@3": 0.5,
+      "AC@5": 0.667,
+      "Avg@5": 0.533,
+      "fault_type_acc|top1_hit": 1.0,
+      "avg_llm_calls": 3.0,
+      "avg_tool_calls": 6.0,
+      "avg_tokens": 4140.0,
+      "avg_latency_s": 0.023,
+      "avg_retries": 0.0,
+      "avg_cost_usd": 0.000748,
+      "early_stop_rate": 1.0
+    },
+    "network_delay": {
+      "cases": 9,
+      "AC@1": 0.111,
+      "AC@3": 0.111,
+      "AC@5": 0.333,
+      "Avg@5": 0.2,
+      "fault_type_acc|top1_hit": 1.0,
+      "avg_llm_calls": 3.0,
+      "avg_tool_calls": 6.0,
+      "avg_tokens": 3787.0,
+      "avg_latency_s": 0.015,
+      "avg_retries": 0.0,
+      "avg_cost_usd": 0.000697,
+      "early_stop_rate": 1.0
+    },
+    "return": {
+      "cases": 5,
+      "AC@1": 0.8,
+      "AC@3": 0.8,
+      "AC@5": 1.0,
+      "Avg@5": 0.84,
+      "fault_type_acc|top1_hit": 0.25,
+      "avg_llm_calls": 3.0,
+      "avg_tool_calls": 6.0,
+      "avg_tokens": 4075.8,
+      "avg_latency_s": 0.019,
+      "avg_retries": 0.0,
+      "avg_cost_usd": 0.000741,
+      "early_stop_rate": 1.0
+    }
+  }
+}
