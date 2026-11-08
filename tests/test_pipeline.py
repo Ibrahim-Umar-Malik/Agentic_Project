@@ -49,3 +49,25 @@ def test_ac_at_k():
     r = EvalRecord(case_id="c", system="s", method="m", true_service="b", true_fault="x",
                    predicted=["a", "b"], predicted_fault="x", usage=Usage())
     assert ac_at_k([r], 1) == 0 and ac_at_k([r], 2) == 1
+
+
+def test_scripted_agent_cli_writes_evaluation_outputs(tmp_path, monkeypatch):
+    import json
+    import sys
+    from microrca.eval.run import main
+
+    monkeypatch.setattr(sys, "argv", [
+        "microrca.eval.run", "--method", "agent", "--provider", "scripted",
+        "--limit", "1", "--out", str(tmp_path),
+    ])
+    main()
+
+    reports = list(tmp_path.glob("*.json"))
+    case_files = list(tmp_path.glob("*_cases.jsonl"))
+    assert len(reports) == 1
+    assert len(case_files) == 1
+    assert json.loads(reports[0].read_text())["overall"]["cases"] == 1
+
+    record = json.loads(case_files[0].read_text().splitlines()[0])
+    assert record["method"] == "P0-react-agent:scripted"
+    assert record["usage"]["tool_calls"] >= 1
