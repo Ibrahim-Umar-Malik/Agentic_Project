@@ -10,7 +10,4 @@ Overleaf
 1. New Project > Upload Project, and upload `main.tex` and `references.bib` (or a zip of them).
 2. The compiler is pdfLaTeX, and the main document is `main.tex`. Overleaf runs BibTeX automatically.
 
-Placeholders to fill (shown in red in the PDF)
-- Project code: in `\title{...}`.
-- Four email addresses: in the author blocks.
-Search for `\placeholder` in `main.tex`. Delete the `\placeholder` macro once everything is filled in.
+Title-page details (project code and emails) are filled in.
